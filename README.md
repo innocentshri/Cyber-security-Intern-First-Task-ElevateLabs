@@ -26,8 +26,11 @@ Phone/Laptop --> Website --> API --> Server --> Database
 
 ## What's Inside This Folder 
 File               |    What it is 
+
 CIA-Triad.md       |    My breakdown of CIA with examples
+
 Attack-Surfaces.md |    Where hackers usually attack
+
 OWASP-Top10.md     |    The Big 10 web vulnerablities  
 
 
