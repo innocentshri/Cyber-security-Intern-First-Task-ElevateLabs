@@ -26,7 +26,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 - OWASP website
 - Dra.io for diagram
 
-## 1 CIA TRIAD - Cybresecurity Foundation 
+## 1. CIA TRIAD - Cybresecurity Foundation 
 
 ### Confindentiality
 **Definition**: Only authorized users access sensitive data
@@ -53,7 +53,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 | WhatsApp | E2E encryption | Message editing | App crash |
 | SBI YONO | PIN/biometrics | Transaction change | ATM down |
 
-## 2 ATTACK SURFACES
+## 2. ATTACK SURFACES
 **Definition**: All potential entry points for attackers
 
 ### Common Attack Surfaces:
@@ -72,7 +72,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 
 ---
 
-## 3 TYPES OF ATTACKERS
+## 3. TYPES OF ATTACKERS
 
 | Attacker | Skill Level | Motivation | Example Target |
 |----------|-------------|------------|---------------|
@@ -83,7 +83,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 
 ---
 
-## 4 OWASP TOP 10 (Most Critical)
+## 4. OWASP TOP 10 (Most Critical)
 
 | # | Vulnerability | Impact | Prevention |
 |---|---------------|--------|------------|
@@ -106,6 +106,6 @@ SELECT * FROM users WHERE username='admin' --';
 The '--' comments out the password validation, 
 allowing authentication bypass and unauthorized admin access.
 
-## 5 Dataflow and Attack Points
+## 5. Dataflow and Attack Points
 ![WhatsApp Image 2026-01-15 at 3 46 54 PM](https://github.com/user-attachments/assets/2e2ccd03-02d6-4460-b8ce-28f52594d9e7)
 
