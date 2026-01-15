@@ -108,4 +108,5 @@ allowing authentication bypass and unauthorized admin access.
 
 ## 5 Dataflow and Attack Points
 
-<img width="531" height="235" alt="image" src="https://github.com/user-attachments/assets/44fab1d2-51dd-41c4-866f-008305e2ac77" />
+<img width="512" height="141" alt="image" src="https://github.com/user-attachments/assets/8379efd3-6243-4837-ad2c-1771e0e2aecb" />
+
