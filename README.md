@@ -24,6 +24,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 ## What I used 
 - Browser for looking stuff up
 - OWASP website
+- Dra.io for diagram
 
 ## 1 CIA TRIAD - Cybresecurity Foundation 
 
@@ -71,7 +72,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 
 ---
 
-## 3️⃣ TYPES OF ATTACKERS
+## 3 TYPES OF ATTACKERS
 
 | Attacker | Skill Level | Motivation | Example Target |
 |----------|-------------|------------|---------------|
@@ -82,7 +83,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 
 ---
 
-## 4️⃣ OWASP TOP 10 (Most Critical)
+## 4 OWASP TOP 10 (Most Critical)
 
 | # | Vulnerability | Impact | Prevention |
 |---|---------------|--------|------------|
@@ -91,20 +92,20 @@ Phone/Laptop --> Website --> API --> Server --> Database
 | **A03** | **Data Exposure** | Identity theft | TLS 1.3 encryption |
 | **A07** | **XSS** | Session theft | Output encoding |
 
-**SQL Injection Example:**
-```sql
--- Vulnerable
+**SQL Injection Example**
+-- Vulnerable Code:
 SELECT * FROM users WHERE username='$username';
 
--- Exploit: username = "admin' --"
--- Result: Logs in as admin!
+-- Attack Input:
+username = admin' --
 
-┌─────────────────┐    ┌─────────────────┐    ┌──────────────┐
-│   User Browser  │───▶│   Web Server    │───▶│   Database   │
-│                 │    │                 │    │              │
-│ -  Phishing      │    │ -  XSS           │    │ -  SQL Inj.   │
-│ -  Malware       │    │ -  RCE           │    │ -  Data Leak  │
-└─────────────────┘    └─────────────────┘    └──────────────┘
+-- Executed Query:
+SELECT * FROM users WHERE username='admin' --';
 
+-- Impact: 
+The '--' comments out the password validation, 
+allowing authentication bypass and unauthorized admin access.
 
+## 5 Dataflow and Attack Points
 
+<img width="531" height="235" alt="image" src="https://github.com/user-attachments/assets/44fab1d2-51dd-41c4-866f-008305e2ac77" />
