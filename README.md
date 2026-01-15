@@ -4,14 +4,14 @@ Cybersecurity Internship Task 1: Understanding CIA Triad, Attack Surfaces, OWASP
 # Task Overview
 So basically I had to cover:
 - The CIA Triad thing (not the spy agency lol) with examples I could relate to
-- Where attackers isally target systems
+- Where attackers usually target systems
 - Different types of hackers and why they do what they do
 - OWASP Top 10 vulnarabilities (this was interesting)
 - looking at how data moves and where it can get attacked
 
 # What I actutally learned 
 ### The CIA Triad
-- *Confidentiality*: Basically keeping your stuff private from people who shouldn't see it
+- **Confidentiality**: Basically keeping your stuff private from people who shouldn't see it
 - **Intergrity**: Making sure nobody messes with your data
 - **Availability**: Keeping everthing up and running when you need it
 
