@@ -25,7 +25,7 @@ Phone/Laptop --> Website --> API --> Server --> Database
 - Browser for looking stuff up
 - OWASP website
 
-## CIA TRIAD - Cybresecurity Foundation 
+## 1 CIA TRIAD - Cybresecurity Foundation 
 
 ### Confindentiality
 **Definition**: Only authorized users access sensitive data
@@ -52,14 +52,59 @@ Phone/Laptop --> Website --> API --> Server --> Database
 | WhatsApp | E2E encryption | Message editing | App crash |
 | SBI YONO | PIN/biometrics | Transaction change | ATM down |
 
+## 2 ATTACK SURFACES
+**Definition**: All potential entry points for attackers
 
+### Common Attack Surfaces:
+1. **Web Apps**: Login forms, search bars, filee uploads
+2. **Mobile Apps**: Local storage, netork calls
+3. **APIs**: Unauthenticated endpoints
+4. **Networks**: Open WiFi, HTTP protocols
+5. **Cloud**: Misconfigured S3 buckets
 
+**Daily Apps Attack Mapping:**
+| App | Attack Surface | Example Attack |
+|-----|----------------|---------------|
+| Gmail | Login form | Phishing page |
+| WhatsApp | QR scanning | Account takeover |
+| PhonePe | UPI PIN | Keylogger |
 
+---
 
+## 3️⃣ TYPES OF ATTACKERS
 
+| Attacker | Skill Level | Motivation | Example Target |
+|----------|-------------|------------|---------------|
+| **Script Kiddie** | Low | Fame/curiosity | School websites |
+| **Insider** | Medium | Revenge/money | Bank employee steals data |
+| **Hacktivist** | High | Politics | Government sites |
+| **Nation-State** | Expert | Espionage | Power grids, elections [file:1]
 
+---
 
+## 4️⃣ OWASP TOP 10 (Most Critical)
 
+| # | Vulnerability | Impact | Prevention |
+|---|---------------|--------|------------|
+| **A01** | **Injection** | Database dump | Prepared statements |
+| **A02** | **Broken Auth** | Account takeover | MFA, strong passwords |
+| **A03** | **Data Exposure** | Identity theft | TLS 1.3 encryption |
+| **A07** | **XSS** | Session theft | Output encoding |
+
+**SQL Injection Example:**
+```sql
+-- Vulnerable
+SELECT * FROM users WHERE username='$username';
+
+-- Exploit: username = "admin' --"
+-- Result: Logs in as admin!
+
+┌─────────────────┐    ┌─────────────────┐    ┌──────────────┐
+│   User Browser  │───▶│   Web Server    │───▶│   Database   │
+│                 │    │                 │    │              │
+│ -  Phishing      │    │ -  XSS           │    │ -  SQL Inj.   │
+│ -  Malware       │    │ -  RCE           │    │ -  Data Leak  │
+└─────────────────┘    └─────────────────┘    └──────────────┘
 
 
 
