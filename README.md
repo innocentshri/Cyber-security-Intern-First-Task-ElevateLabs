@@ -19,7 +19,7 @@ So basically I had to cover:
 Phone/Laptop --> Website --> API --> Server --> Database
 (Phishing emails)  (XSS)   (Broken APIs)  (Remote Code)  (SQL Injection)
 
-## Whar I used 
+## What I used 
 - Browser for looking stuff up
 - OWASP website (super helpful btw)
 - Draw.io for making diagrams
