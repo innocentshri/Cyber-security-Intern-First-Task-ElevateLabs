@@ -107,6 +107,5 @@ The '--' comments out the password validation,
 allowing authentication bypass and unauthorized admin access.
 
 ## 5 Dataflow and Attack Points
-
-<img width="512" height="141" alt="image" src="https://github.com/user-attachments/assets/8379efd3-6243-4837-ad2c-1771e0e2aecb" />
+<img width="542" height="244" alt="image" src="https://github.com/user-attachments/assets/aac84b0c-b4f7-4c85-a464-c3c69d05d2d3" />
 
